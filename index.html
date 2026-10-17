@@ -57,6 +57,22 @@
     -webkit-font-smoothing:antialiased;
   }
   a{color:var(--accent); text-underline-offset:3px}
+  .home-row{margin:2px 0 0}
+  .home-pill{
+    display:inline-block;
+    font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.02em;
+    color:var(--accent);
+    background:var(--paper);
+    border:1px solid var(--rule);
+    border-radius:999px;
+    padding:6px 14px;
+    text-decoration:none;
+    box-shadow:var(--shadow);
+  }
+  .home-pill:hover{border-color:var(--accent-soft); color:var(--ink)}
   .wrap{
     max-width:720px;
     margin:0 auto;
@@ -215,6 +231,7 @@
 </head>
 <body>
 <div class="wrap">
+  <div class="home-row"><a class="home-pill" href="https://jesuslovestyler.com/">⌂ Home</a></div>
   <p class="eyebrow">Faith &nbsp;·&nbsp; For the heart that won't settle</p>
   <h1>For the Anxious</h1>
   <p class="subtitle">You don't have to calm yourself before you come to Him.<br>Come as you are — worried, tired, and still held.</p>
@@ -310,5 +327,6 @@
     Made by Noki for Tyler. Public domain — share freely.
   </footer>
 </div>
+<script data-goatcounter="https://jesuslovestyler.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
