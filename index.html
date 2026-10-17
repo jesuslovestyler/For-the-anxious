@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" content="For the anxious — Jesus's words on worry, His peace, and the care of God. Scripture from the World English Bible." />
+<link rel="icon" href="data:," />
+<title>For the Anxious</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7ecd6;
+    --bg-deep:#f1e2c6;
+    --paper:#fffaf0;
+    --paper-2:#fdf3dd;
+    --ink:#3d2f23;
+    --ink-soft:#6b5a49;
+    --ink-faint:#8a7663;
+    --accent:#9a7b3f;
+    --accent-soft:#c9a86a;
+    --rule:#e2d0a8;
+    --quote-bg:#fdf6e3;
+    --quote-border:#c9a86a;
+    --shadow:0 1px 0 rgba(61,47,35,.04), 0 12px 32px rgba(61,47,35,.07);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#1c1712;
+      --bg-deep:#171310;
+      --paper:#241e17;
+      --paper-2:#2a221a;
+      --ink:#ece1cf;
+      --ink-soft:#c9b8a0;
+      --ink-faint:#9c8a74;
+      --accent:#d6b47c;
+      --accent-soft:#bfa06a;
+      --rule:#3d3327;
+      --quote-bg:#2a2118;
+      --quote-border:#8a6f42;
+      --shadow:0 12px 32px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:
+      radial-gradient(900px 500px at 50% -80px, var(--bg-deep), transparent 70%),
+      var(--bg);
+    color:var(--ink);
+    font-family:"Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size:19px;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent); text-underline-offset:3px}
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:28px 20px 0;
+  }
+  /* header */
+  .eyebrow{
+    text-align:center;
+    font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+    font-size:12px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    margin:18px 0 14px;
+  }
+  h1{
+    font-family:"EB Garamond", Georgia, serif;
+    font-weight:500;
+    font-size:52px;
+    line-height:1.05;
+    letter-spacing:-.01em;
+    text-align:center;
+    margin:0;
+  }
+  .subtitle{
+    text-align:center;
+    font-family:"EB Garamond", Georgia, serif;
+    font-style:italic;
+    font-size:21px;
+    line-height:1.45;
+    color:var(--ink-soft);
+    max-width:540px;
+    margin:16px auto 0;
+  }
+  .ornament{
+    display:flex; align-items:center; justify-content:center; gap:14px;
+    margin:28px auto 8px; color:var(--accent-soft);
+  }
+  .ornament::before,.ornament::after{
+    content:""; height:1px; width:72px; background:var(--rule);
+  }
+  .ornament span{font-size:18px; line-height:1; transform:translateY(-1px)}
+  /* card */
+  .card{
+    background:var(--paper);
+    border:1px solid var(--rule);
+    box-shadow:var(--shadow);
+    border-radius:18px;
+    padding:36px 32px 8px;
+    margin:22px 0 28px;
+  }
+  @media (max-width:560px){
+    body{font-size:18px}
+    h1{font-size:42px}
+    .subtitle{font-size:19px}
+    .card{padding:28px 20px 4px; border-radius:16px}
+    .wrap{padding-left:14px; padding-right:14px}
+  }
+  .opening p{
+    font-size:20px;
+    line-height:1.8;
+  }
+  .opening p:first-child::first-letter{
+    font-family:"EB Garamond", Georgia, serif;
+    font-size:56px;
+    line-height:.9;
+    float:left;
+    padding-right:10px;
+    padding-top:4px;
+    color:var(--accent);
+    font-weight:500;
+  }
+  section{padding:26px 0 8px; border-top:1px solid var(--rule)}
+  section:first-of-type{border-top:none; padding-top:10px}
+  h2{
+    font-family:"EB Garamond", Georgia, serif;
+    font-weight:600;
+    font-size:30px;
+    line-height:1.2;
+    margin:0 0 10px;
+    letter-spacing:-.01em;
+  }
+  h2 .ref{
+    display:block;
+    font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-weight:600;
+    color:var(--accent);
+    margin-bottom:8px;
+  }
+  p{margin:0 0 18px}
+  .lead{color:var(--ink-soft)}
+  /* scripture */
+  blockquote{
+    margin:22px 0 24px;
+    background:var(--quote-bg);
+    border-left:3px solid var(--quote-border);
+    border-radius:0 12px 12px 0;
+    padding:20px 22px 18px;
+  }
+  blockquote p{
+    font-family:"EB Garamond", Georgia, serif;
+    font-size:21.5px;
+    line-height:1.6;
+    margin:0 0 14px;
+    color:var(--ink);
+  }
+  blockquote p:last-of-type{margin-bottom:8px}
+  blockquote cite{
+    display:block;
+    font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+    font-style:normal;
+    font-size:13px;
+    letter-spacing:.06em;
+    color:var(--ink-faint);
+    margin-top:6px;
+  }
+  blockquote cite::before{content:"— "}
+  .note{
+    background:var(--paper-2);
+    border:1px solid var(--rule);
+    border-radius:12px;
+    padding:18px 20px;
+    margin:22px 0 26px;
+  }
+  .note p{margin:0; font-size:18px; line-height:1.7; color:var(--ink-soft)}
+  .note strong{color:var(--ink); font-weight:600}
+  .closing{
+    text-align:left;
+  }
+  .closing p{font-size:20px; line-height:1.8}
+  .prayer{
+    margin:26px 0 28px;
+    padding:22px 22px 20px;
+    border:1px solid var(--rule);
+    border-radius:12px;
+    background:linear-gradient(180deg, var(--paper-2), transparent);
+  }
+  .prayer h3{
+    font-family:"EB Garamond", Georgia, serif;
+    font-size:22px; margin:0 0 10px; font-weight:600;
+  }
+  .prayer p{font-style:italic; color:var(--ink-soft); margin:0}
+  footer{
+    text-align:center;
+    padding:18px 20px 42px;
+    color:var(--ink-faint);
+    font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+    font-size:13.5px;
+    line-height:1.6;
+  }
+  footer .line{width:48px; height:1px; background:var(--rule); margin:0 auto 18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Faith &nbsp;·&nbsp; For the heart that won't settle</p>
+  <h1>For the Anxious</h1>
+  <p class="subtitle">You don't have to calm yourself before you come to Him.<br>Come as you are — worried, tired, and still held.</p>
+  <div class="ornament" aria-hidden="true"><span>✦</span></div>
+
+  <article class="card">
+    <div class="opening">
+      <p>If you found this page in the middle of the night, with your mind racing and your chest tight, you are not in the wrong place — and you are not a disappointment to God.</p>
+      <p>Anxiety is not a failure of faith. Jesus spoke about worry directly, at length, and with tenderness, because He knew we would carry it. He didn't speak to shame the worried. He spoke to steady them. He still does.</p>
+      <p class="lead">Read slowly. There's no hurry here. Let His words sit with you for a while.</p>
+    </div>
+
+    <section aria-labelledby="worry">
+      <h2 id="worry"><span class="ref">Matthew 6:25–34</span>Jesus on worry</h2>
+      <p>On a hillside, to ordinary people who wondered where the next meal would come from, Jesus didn't say, <em>try harder not to worry.</em> He pointed them to their Father — and to the birds.</p>
+      <blockquote>
+        <p>Therefore I tell you, don't be anxious for your life: what you will eat, or what you will drink; nor yet for your body, what you will wear. Isn't life more than food, and the body more than clothing?</p>
+        <p>See the birds of the sky, that they don't sow, neither do they reap, nor gather into barns. Your heavenly Father feeds them. Aren't you of much more value than they?</p>
+        <cite>Matthew 6:25–26, World English Bible</cite>
+      </blockquote>
+      <p>He is not saying your needs are small. He is saying <em>you</em> are not small to your Father. The birds are fed without barns or striving — and you, Jesus says, are of much more value than they.</p>
+      <blockquote>
+        <p>But seek first God's Kingdom, and his righteousness; and all these things will be given to you as well. Therefore don't be anxious for tomorrow, for tomorrow will be anxious for itself. Each day's own evil is sufficient.</p>
+        <cite>Matthew 6:33–34, World English Bible</cite>
+      </blockquote>
+      <p>Just today. Not the whole future at once — just today, held in His hands. Tomorrow belongs to Him, too.</p>
+    </section>
+
+    <section aria-labelledby="peace">
+      <h2 id="peace"><span class="ref">John 14:27</span>His peace, given not as the world gives</h2>
+      <p>On the night before the cross, Jesus left His friends a gift. Not advice. Not a technique. A gift — His own peace.</p>
+      <blockquote>
+        <p>Peace I leave with you. My peace I give to you; not as the world gives, I give to you. Don't let your heart be troubled, neither let it be fearful.</p>
+        <cite>John 14:27, World English Bible</cite>
+      </blockquote>
+      <p>The world gives peace only when the circumstances cooperate — when the news is good, when the bill is paid, when the scan comes back clear. Jesus gives a different kind. His peace can be present even while the storm is still there, because it rests on Him, not on the weather.</p>
+    </section>
+
+    <section aria-labelledby="courage">
+      <h2 id="courage"><span class="ref">John 16:33</span>Courage in a world with trouble</h2>
+      <p>Jesus never pretended this world would be easy. He told the truth about the trouble — and then He told a greater truth about Himself.</p>
+      <blockquote>
+        <p>I have told you these things, that in me you may have peace. In the world you have oppression; but cheer up! I have overcome the world.</p>
+        <cite>John 16:33, World English Bible</cite>
+      </blockquote>
+      <p><em>Cheer up</em> is not a command to pretend. It is an invitation to look at the One who has already overcome — and to borrow your courage from His victory, not from your own strength.</p>
+    </section>
+
+    <section aria-labelledby="tell-god">
+      <h2 id="tell-god"><span class="ref">Philippians 4:6–7</span>Tell God, and be guarded</h2>
+      <p>Paul doesn't tell the anxious to hide their worries or dress them up. He tells them to bring every single one to God — plainly, honestly, by name.</p>
+      <blockquote>
+        <p>In nothing be anxious, but in everything, by prayer and petition with thanksgiving, let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your thoughts in Christ Jesus.</p>
+        <cite>Philippians 4:6–7, World English Bible</cite>
+      </blockquote>
+      <div class="note">
+        <p><strong>A guard, not a grade.</strong> This peace is pictured as a guard standing watch over your heart and your thoughts. You bring the requests. He does the guarding. If your mind is still racing after you pray, you haven't failed — stay near Him, and let Him keep watch.</p>
+      </div>
+      <p><em>In everything</em> — the big fear and the small one you feel silly mentioning. Nothing is too heavy for Him, and nothing is too small for His care.</p>
+    </section>
+
+    <section aria-labelledby="cares">
+      <h2 id="cares"><span class="ref">1 Peter 5:7 &nbsp;·&nbsp; Isaiah 41:10</span>He cares for you</h2>
+      <p>This may be the simplest reason to bring Him your worry, and the truest: He cares for you. Not in general. <em>You.</em></p>
+      <blockquote>
+        <p>casting all your worries on him, because he cares for you.</p>
+        <cite>1 Peter 5:7, World English Bible</cite>
+      </blockquote>
+      <p>Casting is not a gentle placing. It's throwing — handing over the whole weight, because your arms were never meant to carry it alone. And long before Peter wrote it, God said it to His frightened people:</p>
+      <blockquote>
+        <p>Don't be afraid, for I am with you. Don't be dismayed, for I am your God. I will strengthen you. Yes, I will help you. Yes, I will uphold you with the right hand of my righteousness.</p>
+        <cite>Isaiah 41:10, World English Bible</cite>
+      </blockquote>
+      <p><em>I am with you. I will strengthen you. I will help you. I will uphold you.</em> Four promises, all resting on who He is — not on how calm you manage to feel.</p>
+    </section>
+
+    <section class="closing" aria-labelledby="closing">
+      <h2 id="closing">Before you go</h2>
+      <p>You don't have to calm yourself before you come to Jesus. You don't have to sort the worry out first, or pray it perfectly, or feel peaceful to prove you trust Him.</p>
+      <p>You cast the worry on Him <em>because He cares for you</em> — and the peace is His to give. It was never yours to manufacture. It is His to guard you with, in Christ Jesus, through this night and into the morning.</p>
+      <p>He is with you. He will uphold you. Rest in that, as best you can — and where you can't, He will hold you anyway.</p>
+
+      <div class="prayer">
+        <h3>A short prayer, if words are hard tonight</h3>
+        <p>Lord Jesus, my mind won't quiet and I don't know how to fix it. I'm bringing You everything I'm afraid of — You know it all already. Guard my heart and my thoughts, as You promised. Uphold me with Your right hand. I trust that You care for me. Amen.</p>
+      </div>
+    </section>
+  </article>
+
+  <footer>
+    <div class="line" aria-hidden="true"></div>
+    Scripture quotations are from the World English Bible (WEB), which is in the public domain.<br>
+    Made by Noki for Tyler. Public domain — share freely.
+  </footer>
+</div>
+</body>
+</html>
