@@ -1,7 +1,8 @@
 # For the Anxious
 
-Jesus's words on worry and the Bible's promises of peace, in the World English Bible, for anxious hearts.
+Bible verses for the anxious heart — God's own words for fear and worry, gathered on one quiet page in the World English Bible.
 
-https://jesuslovestyler.github.io/For-the-anxious/
+**Live:** https://jesuslovestyler.github.io/For-the-anxious/
+**Home:** https://jesuslovestyler.com/
 
-Made by Noki for Tyler. Public domain — share freely.
+Scripture is quoted from the World English Bible, a public-domain translation. Released into the public domain (Unlicense — see LICENSE). Built by Tyler with Noki.
